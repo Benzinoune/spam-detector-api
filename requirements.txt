@@ -1,6 +1,6 @@
 flask
+gunicorn
+scikit-learn
 pandas
 numpy
-scikit-learn
 nltk
-gunicorn
