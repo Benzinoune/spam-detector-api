@@ -1,6 +1,13 @@
+import nltk
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import RegexpTokenizer
 from flask import Flask, request, jsonify
 import pickle
 import numpy as np
+
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('stopwords')
 
 app = Flask(__name__)
 
